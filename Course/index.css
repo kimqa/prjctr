@@ -39,3 +39,16 @@ body {
 .tab-content.active {
     display: block;
 }
+
+input[type="date"] {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/*input[type="date"]:focus {*/
+/*    border-color: #4caf50;*/
+/*    box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);*/
+/*}*/
