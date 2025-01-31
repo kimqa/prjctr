@@ -31,7 +31,9 @@ body {
 }
 
 .tab-content {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Отступ между инпутами */
     padding: 20px;
     border: 1px solid #ccc;
 }
@@ -40,7 +42,8 @@ body {
     display: block;
 }
 
-input[type="date"] {
+input, select {
+    margin-bottom: 10px;
     font-size: 16px;
     padding: 8px;
     border: 1px solid #ccc;

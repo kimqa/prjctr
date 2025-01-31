@@ -11,11 +11,28 @@
 </div>
 <div class="tab-content active" id="tab1">Date range
     <p>
-        <label> Start Date:
+        <label> Start/End Date:
             <input type="date" class="start-date">
-        </label>
-        <label> End Date:
-            <input type="date" class="end-date">
+            <input type="date" class="end-date" disabled>
+            <select class="end-date-preset" disabled>
+                <option value="week">week</option>
+                <option value="month">month</option>
+            </select>
+        </label><br>
+        <label> Units:
+            <select class="units" >
+                <option value="day">day</option>
+                <option value="hour">hour</option>
+                <option value="minute">minute</option>
+                <option value="second">second</option>
+            </select>
+            </label>
+        <label> Options:
+            <select class="options">
+                <option value="all_days">all days</option>
+                <option value="working_days">working days</option>
+                <option value="weekends">weekend</option>
+            </select>
         </label>
     </p>
 </div>
