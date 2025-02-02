@@ -42,7 +42,7 @@ body {
     display: block;
 }
 
-input, select {
+input, select{
     margin-bottom: 10px;
     font-size: 16px;
     padding: 8px;
@@ -50,6 +50,10 @@ input, select {
     border-radius: 4px;
     outline: none;
 }
+button {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 8px;}
 
 /*input[type="date"]:focus {*/
 /*    border-color: #4caf50;*/

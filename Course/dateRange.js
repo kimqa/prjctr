@@ -3,10 +3,13 @@
 const WORKING_DAYS = [1, 2, 3, 4, 5];
 const WEEKEND_DAYS = [0, 6];
 const ALL_DAYS = [1, 2, 3, 4, 5, 6, 0];
-/*
-return array with ALL, WORKING or WEEKEND days
- */
-function getDaysList(startDay, endDay, options = "all days") {
+//return array with ALL, WORKING or WEEKEND days
+let startDay = document.querySelector(".start-date").value;
+let endDay = document.querySelector(".end-date").value;
+let options = document.querySelector(".options").value;
+let unit = document.querySelector(".units").value;
+
+function getDaysList( ) {
     let days= [];
     switch (options) {
         case "working days" :
@@ -21,7 +24,7 @@ function getDaysList(startDay, endDay, options = "all days") {
     let daysList = [];
     let startDateValue = new Date(startDay);
     let endDateValue = new Date(endDay);
-
+// add days to array daysList
     while (startDateValue <= endDateValue) {
         if (days.includes(startDateValue.getDay())) {
             daysList.push(new Date(startDateValue));
@@ -33,6 +36,18 @@ function getDaysList(startDay, endDay, options = "all days") {
     return daysList;
 }
 
+function returnDuration(dayList) {
+    switch (unit) {
+        case "days": return dayList.length;
+        case "hours": return dayList.length * 24;
+        case "minutes": return dayList.length * 24 * 60;
+        case "seconds": return dayList.length * 24 * 60 * 60;
+    }
+}
+
+
+
+console.log(returnDuration(getDaysList("2025-01-27", "2025-02-02"), "hours"))
 console.log(getDaysList("2025-01-27", "2025-02-02"))
 console.log(getDaysList("2025-01-27", "2025-02-02", "weekend days"));
 console.log(getDaysList("2025-01-27", "2025-02-02", "working days"));
