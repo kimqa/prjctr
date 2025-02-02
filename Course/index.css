@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #eee;
+}
+
+.tab.active {
+    background-color: white;
+    font-weight: bold;
+    border-top: 2px solid #007BFF;
+    border-right: 2px solid #007BFF;
+    border-left: 2px solid #007BFF;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Отступ между инпутами */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+input, select{
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+button {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 8px;
+}
+.table {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-header, .table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+.table-row:nth-child(even) {
+    background: #fafafa;
+}
+
+.table-row span {
+    flex: 1;
+    text-align: center;
+}
+
+.deleteBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deleteBtn:hover {
+    background: darkred;
+}
+
+/*input[type="date"]:focus {*/
+/*    border-color: #4caf50;*/
+/*    box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);*/
+/*}*/

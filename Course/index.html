@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projector</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="tabs">
+    <div class="tab active" data-tab="tab1" data-script="dateRange.js">Date range</div>
+    <div class="tab" data-tab="tab2" data-script="holidays.js">Holidays</div>
+</div>
+<div class="tab-content active" id="tab1">Date range
+    <p>
+        <label> Start/End Date:
+            <input type="date" class="start-date">
+            <input type="date" class="end-date" > <!--disabled-->
+            <select class="end-date-preset" > <!--disabled-->
+                <option value="week">week</option>
+                <option value="month">month</option>
+            </select>
+        </label><br>
+        <label> Units:
+            <select class="units" >
+                <option value="day">day</option>
+                <option value="hour">hour</option>
+                <option value="minute">minute</option>
+                <option value="second">second</option>
+            </select>
+            </label>
+        <label> Options:
+            <select class="options">
+                <option value="all_days">all days</option>
+                <option value="working_days">working days</option>
+                <option value="weekends">weekend</option>
+            </select>
+        </label>
+        <button class="button">count</button>
+
+    <ul id="historyList" class="table">
+        <li class="table-header">
+            <span>Start Date</span>
+            <span>End Date</span>
+            <span>Range</span>
+        </li>
+    </ul>
+
+</div>
+<div class="tab-content" id="tab2">
+    <p>Holidays</p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
