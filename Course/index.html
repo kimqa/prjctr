@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Projector</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -34,8 +35,16 @@
                 <option value="weekends">weekend</option>
             </select>
         </label>
-        <button>count</button>
-    </p>
+        <button class="button">count</button>
+
+    <ul id="historyList" class="table">
+        <li class="table-header">
+            <span>Start Date</span>
+            <span>End Date</span>
+            <span>Range</span>
+        </li>
+    </ul>
+
 </div>
 <div class="tab-content" id="tab2">
     <p>Holidays</p>

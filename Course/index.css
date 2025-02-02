@@ -53,7 +53,51 @@ input, select{
 button {
     margin-bottom: 10px;
     font-size: 16px;
-    padding: 8px;}
+    padding: 8px;
+}
+.table {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-header, .table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+.table-row:nth-child(even) {
+    background: #fafafa;
+}
+
+.table-row span {
+    flex: 1;
+    text-align: center;
+}
+
+.deleteBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deleteBtn:hover {
+    background: darkred;
+}
 
 /*input[type="date"]:focus {*/
 /*    border-color: #4caf50;*/
